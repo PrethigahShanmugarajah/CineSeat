@@ -1,3 +1,4 @@
+/* CineSeat/Client/src/index.css */
 @import url("https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 
 @import "tailwindcss";
@@ -11,4 +12,9 @@
   font-family: "Inria Serif", serif;
   scrollbar-width: thin;
   scrollbar-color: #787777 #1e1e1e;
+}
+
+body {
+  color: #ffffff;
+  background-color: #000000;
 }
