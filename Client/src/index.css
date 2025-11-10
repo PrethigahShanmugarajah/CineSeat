@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #4b0082;
+  --color-primary-dull: #6a1fa1;
+}
+
+* {
+  font-family: "Inria Serif", serif;
+  scrollbar-width: thin;
+  scrollbar-color: #787777 #1e1e1e;
+}
