@@ -1,18 +1,32 @@
+// CineSeat/Client/src/App.jsx
 import React from "react";
+import Navbar from "./components/Navbar";
+import { Route, Routes, useLocation } from "react-router-dom";
+import Home from "./pages/Home";
+import Movies from "./pages/Movies";
+import MovieDetails from "./pages/MovieDetails";
+import SeatLayout from "./pages/SeatLayout";
+import MyBookings from "./pages/MyBookings";
+import Favorite from "./pages/Favorite";
+import Footer from "./components/Footer";
+import ToastProvider from "./components/ToastProvider";
 
 const App = () => {
+  const isAdminRoute = useLocation().pathname.startsWith("/admin");
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-white">
-      <div className="group text-center">
-        <h1 className="text-primary group-hover:text-primary-dull text-7xl font-semibold px-6 py-3 rounded-lg transition-colors">
-          CineSeat
-        </h1>
-
-        <h2 className="text-primary-dull group-hover:text-primary text-7xl font-semibold px-6 py-3 rounded-lg transition-colors">
-          App
-        </h2>
-      </div>
-    </div>
+    <>
+      <ToastProvider />
+      {!isAdminRoute && <Navbar />}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/movies" element={<Movies />} />
+        <Route path="/movies/:id" element={<MovieDetails />} />
+        <Route path="/movies/:id/:date" element={<SeatLayout />} />
+        <Route path="/my-bookings" element={<MyBookings />} />
+        <Route path="/favorite" element={<Favorite />} />
+      </Routes>
+      {!isAdminRoute && <Footer />}
+    </>
   );
 };
 
