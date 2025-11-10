@@ -20,363 +20,392 @@ export const assets = {
 
 export const dummyTrailers = [
   {
-    image: "https://img.youtube.com/vi/WpW36ldAqnM/maxresdefault.jpg",
-    videoUrl: "https://www.youtube.com/watch?v=WpW36ldAqnM",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBKFaxvMIDBFBxE0ElylyQKp1v_hLats7vsQ&s",
+    videoUrl: "https://youtu.be/B5GAjuSnNuQ?si=0WqdGqbQ6xJs-BHZ",
   },
   {
-    image: "https://img.youtube.com/vi/-sAOWhvheK8/maxresdefault.jpg",
-    videoUrl: "https://www.youtube.com/watch?v=-sAOWhvheK8",
+    image:
+      "https://th-i.thgim.com/public/entertainment/movies/gnesbr/article66995238.ece/alternates/LANDSCAPE_1200/Leo%20First%20Look.jpg",
+    videoUrl: "https://youtu.be/Po3jStA673E?si=HlLWoVGIHsYBsL_w",
   },
   {
-    image: "https://img.youtube.com/vi/1pHDWnXmK7Y/maxresdefault.jpg",
-    videoUrl: "https://www.youtube.com/watch?v=1pHDWnXmK7Y",
+    image:
+      "https://i.redd.it/first-look-posters-of-vijay-movies-since-2012-v0-mwi2kysv7i7b1.jpg?width=900&format=pjpg&auto=webp&s=509b71fdee04d674117eac37bf0e884c57558edc",
+    videoUrl: "https://youtu.be/9fux9swQ5AQ?si=gR-MBoR5zhOa3f6V",
   },
   {
-    image: "https://img.youtube.com/vi/umiKiW4En9g/maxresdefault.jpg",
-    videoUrl: "https://www.youtube.com/watch?v=umiKiW4En9g",
+    image:
+      "https://pbs.twimg.com/media/E4Z9tAEVUAICHE9?format=jpg&name=4096x4096",
+    videoUrl: "https://youtu.be/0E1kVRRi6lk?si=RUIOjEqE6oi9UrjE",
+  },
+  {
+    image:
+      "https://i.redd.it/first-look-posters-of-vijay-movies-since-2012-v0-uyr29juv7i7b1.jpg?width=1200&format=pjpg&auto=webp&s=b76ba4376a3179bcd65afcf933d7f7efea20f23d",
+    videoUrl: "https://youtu.be/UTiXQcrLlv4?si=x2waDmBIp8H-Ebmy",
   },
 ];
 
 const dummyCastsData = [
   {
-    name: "Milla Jovovich",
+    name: "Vijay",
     profile_path:
-      "https://image.tmdb.org/t/p/original/usWnHCzbADijULREZYSJ0qfM00y.jpg",
+      "https://m.media-amazon.com/images/M/MV5BMjEyMGJiZDMtNjM1My00YTk3LWI4OWItOGZkODYxY2IyZWU4XkEyXkFqcGc@._V1_.jpg",
   },
   {
-    name: "Dave Bautista",
+    name: "Prabhu Deva",
     profile_path:
-      "https://image.tmdb.org/t/p/original/snk6JiXOOoRjPtHU5VMoy6qbd32.jpg",
+      "https://cinetown.s3.ap-south-1.amazonaws.com/people/profile_img/1698945457.jpeg",
   },
   {
-    name: "Arly Jover",
+    name: "Prashanth",
     profile_path:
-      "https://image.tmdb.org/t/p/original/zmznPrQ9GSZwcOIUT0c3GyETwrP.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/e/e6/Prashanth_at_Saahasam_Audio_Launch.jpg",
   },
   {
-    name: "Amara Okereke",
+    name: "Sneha",
     profile_path:
-      "https://image.tmdb.org/t/p/original/nTSPtzWu6deZTJtWXHUpACVznY4.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/8/85/Sneha_at_Un_Samayal_Arayil_Press_Meet.jpg",
   },
   {
-    name: "Fraser James",
+    name: "Jayaram",
     profile_path:
-      "https://image.tmdb.org/t/p/original/mGAPQG2OKTgdKFkp9YpvCSqcbgY.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/1/15/Jayaram_in_2024.jpg",
   },
   {
-    name: "Deirdre Mullins",
+    name: "Trisha Krishnan",
     profile_path:
-      "https://image.tmdb.org/t/p/original/lJm89neuiVlYISEqNpGZA5kTAnP.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/3/3a/Trisha_Krishnan_at_PS1_pre_release_event_%283%29_%28cropped%29.jpg",
   },
   {
-    name: "Sebastian Stankiewicz",
+    name: "Sanjay Dutt",
     profile_path:
-      "https://image.tmdb.org/t/p/original/hLN0Ca09KwQOFLZLPIEzgTIbqqg.jpg",
+      "https://media.assettype.com/outlookindia/2025-01-06/ughlko40/1.png?w=452&auto=format%2Ccompress&fit=max&format=webp&dpr=1.0",
   },
   {
-    name: "Tue Lunding",
+    name: "Arjun Sarja",
     profile_path:
-      "https://image.tmdb.org/t/p/original/qY4W0zfGBYzlCyCC0QDJS1Muoa0.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/aa/Arjun_Sarja_%281%29.jpg",
   },
   {
-    name: "Jacek Dzisiewicz",
+    name: "Gautham Vasudev Menon",
     profile_path:
-      "https://image.tmdb.org/t/p/original/6Ksb8ANhhoWWGnlM6O1qrySd7e1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/1/1e/Gautham_Menon_at_Dhuruvangal_Pathinaaru_Success_Meet_%28cropped%29.jpg",
   },
   {
-    name: "Ian Hanmore",
+    name: "Rashmika Mandanna",
     profile_path:
-      "https://image.tmdb.org/t/p/original/yhI4MK5atavKBD9wiJtaO1say1p.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/4/4b/Rashmika-Mandanna_at_the_music_launch_of_Chhaava_%28cropped%29.jpg",
   },
   {
-    name: "Eveline Hall",
+    name: "R. Sarathkumar",
     profile_path:
-      "https://image.tmdb.org/t/p/original/uPq4xUPiJIMW5rXF9AT0GrRqgJY.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/e/ee/R_Sarathkumar_at_Tamil_Film_Industry_Hunger_Strike_%28cropped%29.jpg",
   },
   {
-    name: "Kamila Klamut",
+    name: "Shaam",
     profile_path:
-      "https://image.tmdb.org/t/p/original/usWnHCzbADijULREZYSJ0qfM00y.jpg",
+      "https://m.media-amazon.com/images/M/MV5BYTNkMzc4NGUtYjg1ZC00N2E3LTk4NGMtZDdlNzkyMTlkMDhhXkEyXkFqcGc@._V1_.jpg",
   },
   {
-    name: "Caoilinn Springall",
+    name: "Prakash Raj",
     profile_path:
-      "https://image.tmdb.org/t/p/original/uZNtbPHowlBYo74U1qlTaRlrdiY.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/1/14/Prakash_Raj_at_KLF_18_kozhikode.jpg",
   },
   {
-    name: "Jan Kowalewski",
+    name: "Pooja Hegde",
     profile_path:
-      "https://image.tmdb.org/t/p/original/snk6JiXOOoRjPtHU5VMoy6qbd32.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Pooja_Hegde_at_Beast_Telugu_press_meet_%281%29.jpg/960px-Pooja_Hegde_at_Beast_Telugu_press_meet_%281%29.jpg",
   },
   {
-    name: "Pawel Wysocki",
+    name: "Selvaraghavan",
     profile_path:
-      "https://image.tmdb.org/t/p/original/zmznPrQ9GSZwcOIUT0c3GyETwrP.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/4/46/Selvaraghavan_at_the_%E2%80%98NGK%E2%80%99_Audio_%26_Trailer_Launch.jpg",
   },
   {
-    name: "Simon Lööf",
+    name: "Shine Tom Chacko",
     profile_path:
-      "https://image.tmdb.org/t/p/original/cbZrB8crWlLEDjVUoak8Liak6s.jpg",
+      "https://image.tmdb.org/t/p/w500/lIfhgkTK8bgM5jS2R91ZvCxKIwj.jpg",
   },
   {
-    name: "Tomasz Cymerman",
+    name: "Yogi Babu",
     profile_path:
-      "https://image.tmdb.org/t/p/original/nTSPtzWu6deZTJtWXHUpACVznY4.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Yogi_Babu_at_the_Sema_Press_Meet.jpg/250px-Yogi_Babu_at_the_Sema_Press_Meet.jpg",
+  },
+  {
+    name: "Vijay Sethupathi",
+    profile_path:
+      "https://upload.wikimedia.org/wikipedia/commons/e/e9/Vijay_Sethupathi_at_the_premiere_of_Merry_Christmas_2_%28cropped%29.jpg",
+  },
+  {
+    name: "Malavika Mohanan",
+    profile_path:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Malavika_Mohanan_snapped_at_the_Grazia_Indie_Beauty_Awards_2025.jpg/250px-Malavika_Mohanan_snapped_at_the_Grazia_Indie_Beauty_Awards_2025.jpg",
+  },
+  {
+    name: "Arjun Das",
+    profile_path:
+      "https://image.tmdb.org/t/p/w500/20RDzfTjpfRHxLYBfnIYXs7vcri.jpg",
+  },
+  {
+    name: "Andrea Jeremiah",
+    profile_path:
+      "https://image.tmdb.org/t/p/w500/2AgkEtyffeAU5ikwbpvpjfnDWMt.jpg",
   },
 ];
 
 export const dummyShowsData = [
   {
-    _id: "324544",
-    id: 324544,
-    title: "In the Lost Lands",
+    _id: "goat_2024",
+    id: 101,
+    title: "The Greatest of All Time (GOAT)",
     overview:
-      "A queen sends the powerful and feared sorceress Gray Alys to the ghostly wilderness of the Lost Lands in search of a magical power, where she and her guide, the drifter Boyce, must outwit and outfight both man and demon.",
+      "GOAT follows the story of Gandhi and Jeevan/Sanjay as they navigate family dynamics, rivalry, and personal ambitions in a gripping drama full of action and emotion.",
     poster_path:
-      "https://image.tmdb.org/t/p/original/dDlfjR7gllmr8HTeN6rfrYhTdwX.jpg",
+      "https://m.media-amazon.com/images/M/MV5BNTQ5M2I0MmItMTBhNS00MzliLWI5ZGUtNzA1MDY0NzIwNTgxXkEyXkFqcGc@._V1_.jpg",
     backdrop_path:
-      "https://image.tmdb.org/t/p/original/op3qmNhvwEvyT7UFyPbIfQmKriB.jpg",
+      "https://images.indianexpress.com/2024/09/The-Greatest-of-All-Time-GOAT-Movie-Review.jpg",
     genres: [
       { id: 28, name: "Action" },
-      { id: 14, name: "Fantasy" },
-      { id: 12, name: "Adventure" },
+      { id: 18, name: "Drama" },
+      { id: 53, name: "Thriller" },
     ],
-    casts: dummyCastsData,
-    release_date: "2025-02-27",
-    original_language: "en",
-    tagline: "She seeks the power to free her people.",
-    vote_average: 6.4,
-    vote_count: 15000,
-    runtime: 102,
+    // casts: dummyCastsData,
+    casts: [
+      dummyCastsData[0],
+      dummyCastsData[1],
+      dummyCastsData[2],
+      dummyCastsData[3],
+      dummyCastsData[4],
+    ],
+    release_date: "2024-09-05",
+    original_language: "ta",
+    tagline: "The saga of the greatest unfolds.",
+    vote_average: 5.7,
+    vote_count: 24935,
+    runtime: 183,
   },
   {
-    _id: "1232546",
-    id: 1232546,
-    title: "Until Dawn",
+    _id: "leo_2023",
+    id: 102,
+    title: "Leo",
     overview:
-      "One year after her sister Melanie mysteriously disappeared, Clover and her friends head into the remote valley where she vanished in search of answers. Exploring an abandoned visitor center, they find themselves stalked by a masked killer and horrifically murdered one by one...only to wake up and find themselves back at the beginning of the same evening.",
+      "Leo follows the story of Parthiban, a cafe owner who gets entangled in a violent conflict involving gangsters and his family. The film is an action-packed thriller with emotional undertones.",
     poster_path:
-      "https://image.tmdb.org/t/p/original/juA4IWO52Fecx8lhAsxmDgy3M3.jpg",
-    backdrop_path:
-      "https://image.tmdb.org/t/p/original/icFWIk1KfkWLZnugZAJEDauNZ94.jpg",
-    genres: [
-      { id: 27, name: "Horror" },
-      { id: 9648, name: "Mystery" },
-    ],
-    casts: dummyCastsData,
-    release_date: "2025-04-23",
-    original_language: "en",
-    tagline: "Every night a different nightmare.",
-    vote_average: 6.405,
-    vote_count: 18000,
-    runtime: 103,
-  },
-  {
-    _id: "552524",
-    id: 552524,
-    title: "Lilo & Stitch",
-    overview:
-      "The wildly funny and touching story of a lonely Hawaiian girl and the fugitive alien who helps to mend her broken family.",
-    poster_path:
-      "https://image.tmdb.org/t/p/original/mKKqV23MQ0uakJS8OCE2TfV5jNS.jpg",
-    backdrop_path:
-      "https://image.tmdb.org/t/p/original/7Zx3wDG5bBtcfk8lcnCWDOLM4Y4.jpg",
-    genres: [
-      { id: 10751, name: "Family" },
-      { id: 35, name: "Comedy" },
-      { id: 878, name: "Science Fiction" },
-    ],
-    casts: dummyCastsData,
-    release_date: "2025-05-17",
-    original_language: "en",
-    tagline: "Hold on to your coconuts.",
-    vote_average: 7.117,
-    vote_count: 27500,
-    runtime: 108,
-  },
-  {
-    _id: "668489",
-    id: 668489,
-    title: "Havoc",
-    overview:
-      "When a drug heist swerves lethally out of control, a jaded cop fights his way through a corrupt city's criminal underworld to save a politician's son.",
-    poster_path:
-      "https://image.tmdb.org/t/p/original/ubP2OsF3GlfqYPvXyLw9d78djGX.jpg",
-    backdrop_path:
-      "https://image.tmdb.org/t/p/original/65MVgDa6YjSdqzh7YOA04mYkioo.jpg",
+      "https://www.wallsnapy.com/img_gallery/vijay-leo-movie-stills-hd-wallpapers-1200px-6145835.jpg",
+    backdrop_path: "https://wallpapercave.com/wp/wp12220945.jpg",
     genres: [
       { id: 28, name: "Action" },
       { id: 80, name: "Crime" },
-      { id: 53, name: "Thriller" },
     ],
-    casts: dummyCastsData,
-    release_date: "2025-04-25",
-    original_language: "en",
-    tagline: "No law. Only disorder.",
-    vote_average: 6.537,
-    vote_count: 35960,
-    runtime: 107,
+    // casts: dummyCastsData,
+    casts: [
+      dummyCastsData[0],
+      dummyCastsData[5],
+      dummyCastsData[6],
+      dummyCastsData[7],
+      dummyCastsData[8],
+    ],
+    release_date: "2023-10-19",
+    original_language: "ta",
+    tagline: "Every family has secrets; every man has a limit.",
+    vote_average: 7.2,
+    vote_count: 71556,
+    runtime: 164,
   },
   {
-    _id: "950387",
-    id: 950387,
-    title: "A Minecraft Movie",
+    _id: "varisu_2023",
+    id: 103,
+    title: "Varisu",
     overview:
-      "Four misfits find themselves struggling with ordinary problems when they are suddenly pulled through a mysterious portal into the Overworld: a bizarre, cubic wonderland that thrives on imagination. To get back home, they'll have to master this world while embarking on a magical quest with an unexpected, expert crafter, Steve.",
+      "Varisu tells the story of Vijay Rajendran, the youngest son of a business tycoon, who unexpectedly takes charge of the family business amidst rivalry, family drama, and corporate challenges.",
     poster_path:
-      "https://image.tmdb.org/t/p/original/yFHHfHcUgGAxziP1C3lLt0q2T4s.jpg",
+      "https://www.wallsnapy.com/img_gallery/varisu-vijay-third-look-hd-photos-download-3992792.jpg",
     backdrop_path:
-      "https://image.tmdb.org/t/p/original/2Nti3gYAX513wvhp8IiLL6ZDyOm.jpg",
+      "https://m.media-amazon.com/images/M/MV5BMDYzZDM5NDMtNGZmZS00YzUyLWFkNTQtNDk1MWQyZDQwZWJlXkEyXkFqcGdeQWthc2hpa2F4._V1_.jpg",
     genres: [
-      { id: 10751, name: "Family" },
-      { id: 35, name: "Comedy" },
-      { id: 12, name: "Adventure" },
-      { id: 14, name: "Fantasy" },
+      { id: 18, name: "Drama" },
+      { id: 10749, name: "Romance" },
+      { id: 28, name: "Action" },
     ],
-    casts: dummyCastsData,
-    release_date: "2025-03-31",
-    original_language: "en",
-    tagline: "Be there and be square.",
-    vote_average: 6.516,
-    vote_count: 15225,
-    runtime: 101,
+    // casts: dummyCastsData,
+    casts: [
+      dummyCastsData[0],
+      dummyCastsData[9],
+      dummyCastsData[10],
+      dummyCastsData[11],
+      dummyCastsData[12],
+    ],
+    release_date: "2023-01-11",
+    original_language: "ta",
+    tagline: "The heir to a legacy rises.",
+    vote_average: 5.9,
+    vote_count: 18234,
+    runtime: 167,
   },
   {
-    _id: "575265",
-    id: 575265,
-    title: "Mission: Impossible - The Final Reckoning",
+    _id: "beast_2022",
+    id: 104,
+    title: "Beast",
     overview:
-      "Ethan Hunt and team continue their search for the terrifying AI known as the Entity — which has infiltrated intelligence networks all over the globe — with the world's governments and a mysterious ghost from Hunt's past on their trail. Joined by new allies and armed with the means to shut the Entity down for good, Hunt is in a race against time to prevent the world as we know it from changing forever.",
+      "Beast follows Veera Raghavan, a former RAW agent, who finds himself trapped in a mall taken over by terrorists. He must use his skills to save the hostages and protect innocent lives in this action-packed thriller.",
     poster_path:
-      "https://image.tmdb.org/t/p/original/z53D72EAOxGRqdr7KXXWp9dJiDe.jpg",
-    backdrop_path:
-      "https://image.tmdb.org/t/p/original/1p5aI299YBnqrEEvVGJERk2MXXb.jpg",
+      "https://w0.peakpx.com/wallpaper/790/559/HD-wallpaper-be%CA%8Cst-vijay-thalapathy-beast.jpg",
+    backdrop_path: "https://images.indianexpress.com/2022/04/beast-vijay.jpg",
     genres: [
       { id: 28, name: "Action" },
-      { id: 12, name: "Adventure" },
       { id: 53, name: "Thriller" },
+      { id: 12, name: "Adventure" },
     ],
-    casts: dummyCastsData,
-    release_date: "2025-05-17",
-    original_language: "en",
-    tagline: "Our lives are the sum of our choices.",
-    vote_average: 7.042,
-    vote_count: 19885,
-    runtime: 170,
+    // casts: dummyCastsData,
+    casts: [
+      dummyCastsData[0],
+      dummyCastsData[13],
+      dummyCastsData[14],
+      dummyCastsData[15],
+      dummyCastsData[16],
+    ],
+    release_date: "2022-04-13",
+    original_language: "ta",
+    tagline: "One man. One mission. One beast.",
+    vote_average: 5.2,
+    vote_count: 38729,
+    runtime: 155,
   },
   {
-    _id: "986056",
-    id: 986056,
-    title: "Thunderbolts*",
+    _id: "master_2021",
+    id: 105,
+    title: "Master",
     overview:
-      "After finding themselves ensnared in a death trap, seven disillusioned castoffs must embark on a dangerous mission that will force them to confront the darkest corners of their pasts.",
+      "Master follows JD, an alcoholic professor sent to a juvenile school, where he clashes with Bhavani, a gangster exploiting the students for criminal activities. The film is an intense action-drama with emotional depth.",
     poster_path:
-      "https://image.tmdb.org/t/p/original/m9EtP1Yrzv6v7dMaC9mRaGhd1um.jpg",
+      "https://i.pinimg.com/736x/89/d8/67/89d8675fef4d45625f2def905a47d58d.jpg",
     backdrop_path:
-      "https://image.tmdb.org/t/p/original/rthMuZfFv4fqEU4JVbgSW9wQ8rs.jpg",
+      "https://m.media-amazon.com/images/M/MV5BOWY2MDkxYTAtMTJmOC00ZTZkLWI3MzEtNGI0ZDJkODBmNjFjXkEyXkFqcGc@._V1_.jpg",
     genres: [
       { id: 28, name: "Action" },
-      { id: 878, name: "Science Fiction" },
-      { id: 12, name: "Adventure" },
+      { id: 18, name: "Drama" },
+      { id: 80, name: "Crime" },
+      { id: 10749, name: "Romance" },
     ],
-    casts: dummyCastsData,
-    release_date: "2025-04-30",
-    original_language: "en",
-    tagline: "Everyone deserves a second shot.",
-    vote_average: 7.443,
-    vote_count: 23569,
-    runtime: 127,
+    // casts: dummyCastsData,
+    casts: [
+      dummyCastsData[0],
+      dummyCastsData[17],
+      dummyCastsData[18],
+      dummyCastsData[19],
+      dummyCastsData[20],
+    ],
+    release_date: "2021-01-13",
+    original_language: "ta",
+    tagline: "A teacher. A gangster. A clash of ideologies.",
+    vote_average: 7.4,
+    vote_count: 89050,
+    runtime: 179,
   },
 ];
 
 export const dummyDateTimeData = {
-  "2025-07-24": [
-    { time: "2025-07-24T01:00:00.000Z", showId: "68395b407f6329be2bb45bd1" },
-    { time: "2025-07-24T03:00:00.000Z", showId: "68395b407f6329be2bb45bd2" },
-    { time: "2025-07-24T05:00:00.000Z", showId: "68395b407f6329be2bb45bd3" },
+  "2026-01-01": [
+    { time: "2026-01-01T10:00:00.000Z", showId: "show_201" },
+    { time: "2026-01-01T14:00:00.000Z", showId: "show_202" },
+    { time: "2026-01-01T18:00:00.000Z", showId: "show_203" },
   ],
-  "2025-07-25": [
-    { time: "2025-07-25T01:00:00.000Z", showId: "68395b407f6329be2bb45bd4" },
-    { time: "2025-07-25T03:00:00.000Z", showId: "68395b407f6329be2bb45bd5" },
-    { time: "2025-07-25T05:00:00.000Z", showId: "68395b407f6329be2bb45bd6" },
+  "2026-01-02": [
+    { time: "2026-01-02T11:00:00.000Z", showId: "show_204" },
+    { time: "2026-01-02T15:00:00.000Z", showId: "show_205" },
+    { time: "2026-01-02T19:00:00.000Z", showId: "show_206" },
   ],
-  "2025-07-26": [
-    { time: "2025-07-26T01:00:00.000Z", showId: "68395b407f6329be2bb45bd7" },
-    { time: "2025-07-26T03:00:00.000Z", showId: "68395b407f6329be2bb45bd8" },
-    { time: "2025-07-26T05:00:00.000Z", showId: "68395b407f6329be2bb45bd9" },
+  "2026-01-03": [
+    { time: "2026-01-03T09:30:00.000Z", showId: "show_207" },
+    { time: "2026-01-03T13:30:00.000Z", showId: "show_208" },
+    { time: "2026-01-03T17:30:00.000Z", showId: "show_209" },
   ],
-  "2025-07-27": [
-    { time: "2025-07-27T01:00:00.000Z", showId: "68395b407f6329be2bb45bda" },
-    { time: "2025-07-27T03:00:00.000Z", showId: "68395b407f6329be2bb45bdb" },
-    { time: "2025-07-27T05:00:00.000Z", showId: "68395b407f6329be2bb45bdc" },
+  "2026-01-04": [
+    { time: "2026-01-04T10:15:00.000Z", showId: "show_210" },
+    { time: "2026-01-04T14:15:00.000Z", showId: "show_211" },
+    { time: "2026-01-04T18:15:00.000Z", showId: "show_212" },
+  ],
+  "2026-01-05": [
+    { time: "2026-01-05T09:45:00.000Z", showId: "show_213" },
+    { time: "2026-01-05T13:45:00.000Z", showId: "show_214" },
+    { time: "2026-01-05T17:45:00.000Z", showId: "show_215" },
   ],
 };
 
 export const dummyDashboardData = {
-  totalBookings: 14,
-  totalRevenue: 1517,
-  totalUser: 5,
+  totalBookings: 1523,
+  totalRevenue: 987450,
+  totalUser: 842,
   activeShows: [
     {
-      _id: "68352363e96d99513e4221a4",
+      _id: "active_001",
       movie: dummyShowsData[0],
-      showDateTime: "2025-06-30T02:30:00.000Z",
-      showPrice: 59,
+      showDateTime: "2026-01-01T10:00:00.000Z",
+      showPrice: 350,
       occupiedSeats: {
-        A1: "user_2xO4XPCgWWwWq9EHuQxc5UWqIok",
-        B1: "user_2xO4XPCgWWwWq9EHuQxc5UWqIok",
-        C1: "user_2xO4XPCgWWwWq9EHuQxc5UWqIok",
+        A1: "booked",
+        B1: "booked",
+        C1: "available",
       },
     },
     {
-      _id: "6835238fe96d99513e4221a8",
+      _id: "active_002",
       movie: dummyShowsData[1],
-      showDateTime: "2025-06-30T15:30:00.000Z",
-      showPrice: 81,
-      occupiedSeats: {},
-    },
-    {
-      _id: "6835238fe96d99513e4221a9",
-      movie: dummyShowsData[2],
-      showDateTime: "2025-06-30T03:30:00.000Z",
-      showPrice: 81,
-      occupiedSeats: {},
-    },
-    {
-      _id: "6835238fe96d99513e4221aa",
-      movie: dummyShowsData[3],
-      showDateTime: "2025-07-15T16:30:00.000Z",
-      showPrice: 81,
+      showDateTime: "2026-01-01T14:00:00.000Z",
+      showPrice: 300,
       occupiedSeats: {
-        A1: "user_2xO4XPCgWWwWq9EHuQxc5UWqIok",
-        A2: "user_2xO4XPCgWWwWq9EHuQxc5UWqIok",
-        A3: "user_2xO4XPCgWWwWq9EHuQxc5UWqIok",
-        A4: "user_2xO4XPCgWWwWq9EHuQxc5UWqIok",
+        A1: "booked",
+        B2: "booked",
+        C2: "available",
       },
     },
     {
-      _id: "683682072b5989c29fc6dc0d",
-      movie: dummyShowsData[4],
-      showDateTime: "2025-06-05T15:30:00.000Z",
-      showPrice: 49,
+      _id: "active_003",
+      movie: dummyShowsData[2],
+      showDateTime: "2026-01-02T11:00:00.000Z",
+      showPrice: 400,
       occupiedSeats: {
-        A1: "user_2xO4XPCgWWwWq9EHuQxc5UWqIok",
-        A2: "user_2xO4XPCgWWwWq9EHuQxc5UWqIok",
-        A3: "user_2xO4XPCgWWwWq9EHuQxc5UWqIok",
-        B1: "user_2xO4XPCgWWwWq9EHuQxc5UWqIok",
-        B2: "user_2xO4XPCgWWwWq9EHuQxc5UWqIok",
-        B3: "user_2xO4XPCgWWwWq9EHuQxc5UWqIok",
+        A1: "booked",
+        B1: "available",
+        C1: "available",
+      },
+    },
+    {
+      _id: "active_004",
+      movie: dummyShowsData[3],
+      showDateTime: "2026-01-03T16:00:00.000Z",
+      showPrice: 350,
+      occupiedSeats: {
+        A1: "booked",
+        A2: "booked",
+        A3: "booked",
+        A4: "available",
+      },
+    },
+    {
+      _id: "active_005",
+      movie: dummyShowsData[4],
+      showDateTime: "2026-01-04T18:00:00.000Z",
+      showPrice: 400,
+      occupiedSeats: {
+        A1: "booked",
+        A2: "booked",
+        A3: "booked",
+        B1: "booked",
+        B2: "available",
+        B3: "available",
       },
       __v: 0,
     },
     {
-      _id: "68380044686d454f2116b39a",
-      movie: dummyShowsData[5],
-      showDateTime: "2025-06-20T16:00:00.000Z",
-      showPrice: 79,
+      _id: "active_006",
+      movie: dummyShowsData[0],
+      showDateTime: "2026-01-05T12:00:00.000Z",
+      showPrice: 350,
       occupiedSeats: {
-        A1: "user_2xl7eCSUHddibk5lRxfOtw9RMwX",
-        A2: "user_2xl7eCSUHddibk5lRxfOtw9RMwX",
+        A1: "booked",
+        A2: "available",
       },
     },
   ],
@@ -384,42 +413,68 @@ export const dummyDashboardData = {
 
 export const dummyBookingData = [
   {
-    _id: "68396334fb83252d82e17295",
-    user: { name: "GreatStack" },
+    _id: "booking_001",
+    user: { name: "Prethigah" },
     show: {
-      _id: "68352363e96d99513e4221a4",
+      _id: "active_001",
       movie: dummyShowsData[0],
-      showDateTime: "2025-06-30T02:30:00.000Z",
-      showPrice: 59,
+      showDateTime: "2025-11-01T02:30:00.000Z",
+      showPrice: 350,
     },
-    amount: 98,
-    bookedSeats: ["D1", "D2"],
-    isPaid: false,
+    amount: 700,
+    bookedSeats: ["A1", "B1"],
+    isPaid: true,
   },
   {
-    _id: "68396334fb83252d82e17295",
-    user: { name: "GreatStack" },
+    _id: "booking_002",
+    user: { name: "Sathya" },
     show: {
-      _id: "68352363e96d99513e4221a4",
-      movie: dummyShowsData[0],
-      showDateTime: "2025-06-30T02:30:00.000Z",
-      showPrice: 59,
+      _id: "active_002",
+      movie: dummyShowsData[1],
+      showDateTime: "2026-01-01T14:00:00.000Z",
+      showPrice: 300,
     },
-    amount: 49,
+    amount: 300,
     bookedSeats: ["A1"],
     isPaid: true,
   },
   {
-    _id: "68396334fb83252d82e17295",
-    user: { name: "GreatStack" },
+    _id: "booking_003",
+    user: { name: "Priya" },
     show: {
-      _id: "68352363e96d99513e4221a4",
-      movie: dummyShowsData[0],
-      showDateTime: "2025-06-30T02:30:00.000Z",
-      showPrice: 59,
+      _id: "active_003",
+      movie: dummyShowsData[2],
+      showDateTime: "2026-01-02T11:00:00.000Z",
+      showPrice: 400,
     },
-    amount: 147,
+    amount: 1200,
+    bookedSeats: ["A1", "B1", "C1"],
+    isPaid: false,
+  },
+  {
+    _id: "booking_004",
+    user: { name: "Arun" },
+    show: {
+      _id: "active_004",
+      movie: dummyShowsData[3],
+      showDateTime: "2026-01-03T16:00:00.000Z",
+      showPrice: 350,
+    },
+    amount: 1050,
     bookedSeats: ["A1", "A2", "A3"],
     isPaid: true,
+  },
+  {
+    _id: "booking_005",
+    user: { name: "Divya" },
+    show: {
+      _id: "active_005",
+      movie: dummyShowsData[4],
+      showDateTime: "2026-01-04T18:00:00.000Z",
+      showPrice: 400,
+    },
+    amount: 1600,
+    bookedSeats: ["A1", "A2", "A3", "B1"],
+    isPaid: false,
   },
 ];
