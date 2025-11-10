@@ -1,3 +1,4 @@
+// CineSeat/Client/src/components/BlurCircle.jsx
 import React from "react";
 
 const BlurCircle = ({
