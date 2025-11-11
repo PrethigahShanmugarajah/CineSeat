@@ -3,17 +3,17 @@ import React from "react";
 import { ToastContainer, toast, Slide, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import {
-  X,
-  CircleCheck,
-  AlertOctagon,
-  AlertTriangle,
-  Info,
-} from "lucide-react";
+  FaCheckCircle,
+  FaExclamationCircle,
+  FaExclamationTriangle,
+  FaInfoCircle,
+  FaTimes,
+} from "react-icons/fa";
 
 export const notify = {
   success: (msg) =>
     toast.success(msg, {
-      icon: <CircleCheck color="currentColor" size={20} />,
+      icon: <FaCheckCircle color="currentColor" size={20} />,
       style: {
         background: "#22c55e",
         color: "#ffffff",
@@ -25,7 +25,7 @@ export const notify = {
     }),
   error: (msg) =>
     toast.error(msg, {
-      icon: <AlertOctagon color="currentColor" size={20} />,
+      icon: <FaExclamationTriangle color="currentColor" size={20} />,
       style: {
         background: "#dc2626",
         color: "#ffffff",
@@ -38,7 +38,7 @@ export const notify = {
     }),
   warning: (msg) =>
     toast.warn(msg, {
-      icon: <AlertTriangle color="currentColor" size={20} />,
+      icon: <FaExclamationCircle color="currentColor" size={20} />,
       style: {
         background: "#f97316",
         color: "#ffffff",
@@ -51,7 +51,7 @@ export const notify = {
     }),
   info: (msg) =>
     toast.info(msg, {
-      icon: <Info color="currentColor" size={20} />,
+      icon: <FaInfoCircle color="currentColor" size={20} />,
       style: {
         background: "#3b82f6",
         color: "#ffffff",
@@ -75,13 +75,6 @@ const ToastProvider = () => {
       closeOnClick
       pauseOnHover
       draggable
-      toastStyle={{
-        padding: "12px 16px",
-        borderRadius: "8px",
-        fontWeight: 500,
-        fontSize: "16px",
-        color: "#fff",
-      }}
       closeButton={({ closeToast }) => (
         <button
           onClick={closeToast}
@@ -97,7 +90,7 @@ const ToastProvider = () => {
             justifyContent: "center",
           }}
         >
-          <X color="#FFFFFF" size={16} />
+          <FaTimes color="#FFFFFF" size={16} />
         </button>
       )}
       toastClassName="custom-toast"
