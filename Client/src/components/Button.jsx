@@ -9,7 +9,7 @@ const Button = ({ text, children, onClick, className, type, variant }) => {
     text: "bg-transparent text-black border-none hover:bg-transparent",
   };
 
-  const baseClasses = `cursor-pointer px-8 py-2 rounded-md transition hover:rounded-full ${variants[variant]}`;
+  const baseClasses = `cursor-pointer px-6 py-3 rounded-md transition hover:rounded-full ${variants[variant]}`;
 
   return (
     <button
