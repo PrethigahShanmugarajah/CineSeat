@@ -12,6 +12,7 @@ import Leo from "./Leo.png";
 import Varisu from "./Varisu.png";
 import Beast from "./Beast.png";
 import Master from "./Master.png";
+import Bigil from "./Bigil.png";
 
 export const assets = {
   logo,
@@ -63,6 +64,10 @@ export const dummyTrailers = [
   {
     image: Master,
     videoUrl: "https://youtu.be/UTiXQcrLlv4?si=x2waDmBIp8H-Ebmy",
+  },
+  {
+    image: Bigil,
+    videoUrl: "https://youtu.be/GR-Ui8-V2M0?si=pN2IVD6RK_Cpagkt",
   },
 ];
 
