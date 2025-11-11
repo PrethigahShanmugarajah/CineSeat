@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { assets } from "../assets/assets";
-import { MenuIcon, SearchIcon, TicketPlus, XIcon } from "lucide-react";
+import { FaBars, FaSearch, FaTimes } from "react-icons/fa";
 import Button from "./Button";
 import { useClerk, UserButton, useUser } from "@clerk/clerk-react";
 
@@ -23,7 +23,7 @@ const Navbar = () => {
           isOpen ? "max-md:w-full" : "max-md:w-0"
         }`}
       >
-        <XIcon
+        <FaTimes
           className="md:hidden absolute top-6 right-6 w-6 h-6 cursor-pointer"
           onClick={() => setIsOpen(!isOpen)}
         />
@@ -91,7 +91,7 @@ const Navbar = () => {
       </div>
 
       <div className="flex items-center gap-8">
-        <SearchIcon className="max-md:hidden w-6 cursor-pointer" />
+        <FaSearch className="max-md:hidden w-6 h-6 cursor-pointer" />
 
         {!user ? (
           // <button
@@ -121,7 +121,7 @@ const Navbar = () => {
         )}
       </div>
 
-      <MenuIcon
+      <FaBars
         className="max-md:ml-4 md:hidden w-8 h-8 cursor-pointer"
         onClick={() => setIsOpen(!isOpen)}
       />
