@@ -1,7 +1,7 @@
 // CineSeat/Client/src/components/HeroSection.jsx
 import React from "react";
 import { assets } from "../assets/assets";
-import { ArrowRight, CalculatorIcon, ClockIcon } from "lucide-react";
+import { FaArrowRight, FaCalendar, FaRegClock } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import Button from "./Button";
 
@@ -19,11 +19,13 @@ const HeroSection = () => {
       <div className="flex items-center gap-4 text-gray-300">
         <span>Action | Sci-Fi | Drama</span>
         <div className="flex items-center gap-1">
-          <CalculatorIcon className="w-4.5 h-4.5" /> 2024
+          <FaCalendar className="w-4.5 h-4.5" />
+          2024
         </div>
 
         <div className="flex items-center gap-1">
-          <ClockIcon className="w-4.5 h-4.5" /> 3h 3m
+          <FaRegClock className="w-4.5 h-4.5" />
+          3h 3m
         </div>
       </div>
 
@@ -37,13 +39,14 @@ const HeroSection = () => {
         onClick={() => navigate("/movies")}
         className="flex items-center gap-1 px-6 py-3 text-sm bg-primary hover:bg-primary-dull transition rounded-full font-medium cursor-pointer"
       >
-        Explore Movies <ArrowRight className="w-5 h-5" />
+        Explore Movies <FaArrowRight className="w-5" />
       </button> */}
 
       <Button
         text={
           <span className="flex items-center gap-1">
-            Explore Movies <ArrowRight className="w-5 h-5" />
+            Explore Movies
+            <FaArrowRight className="w-5" />
           </span>
         }
         onClick={() => navigate("/movies")}
