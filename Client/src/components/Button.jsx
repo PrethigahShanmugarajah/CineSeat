@@ -5,7 +5,8 @@ const Button = ({ text, children, onClick, className, type, variant }) => {
   const variants = {
     primary:
       "bg-primary text-white border border-primary hover:bg-primary-dull",
-    secondary: "bg-transparent text-white border border-white",
+    secondary:
+      "bg-transparent text-white border border-white hover:bg-gray-900",
     text: "bg-transparent text-black border-none hover:bg-transparent",
   };
 
