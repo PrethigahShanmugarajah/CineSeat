@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { StarIcon } from "lucide-react";
+import { FaStar } from "react-icons/fa";
 import timeFormat from "../lib/timeFormat";
 import Button from "./Button";
 
@@ -51,7 +51,7 @@ const MovieCard = ({ movie }) => {
         />
 
         <p className="flex items-center gap-1 text-sm text-gray-400 mt-1 pr-1">
-          <StarIcon className="w-4 h-4 text-primary fill-primary" />
+          <FaStar className="w-4 h-4 text-primary fill-primary" />
           {movie.vote_average.toFixed(1)}
         </p>
       </div>
