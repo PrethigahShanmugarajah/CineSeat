@@ -7,6 +7,12 @@ import screenImage from "./screenImage.svg";
 import profile from "./profile.png";
 import Ags from "./Ags.png";
 
+import Goat from "./Goat.png";
+import Leo from "./Leo.png";
+import Varisu from "./Varisu.png";
+import Beast from "./Beast.png";
+import Master from "./Master.png";
+
 export const assets = {
   logo,
   Logo,
@@ -18,30 +24,44 @@ export const assets = {
   Ags,
 };
 
+// export const dummyTrailers = [
+//   {
+//     image: "https://img.youtube.com/vi/WpW36ldAqnM/maxresdefault.jpg",
+//     videoUrl: "https://www.youtube.com/watch?v=WpW36ldAqnM",
+//   },
+//   {
+//     image: "https://img.youtube.com/vi/-sAOWhvheK8/maxresdefault.jpg",
+//     videoUrl: "https://www.youtube.com/watch?v=-sAOWhvheK8",
+//   },
+//   {
+//     image: "https://img.youtube.com/vi/1pHDWnXmK7Y/maxresdefault.jpg",
+//     videoUrl: "https://www.youtube.com/watch?v=1pHDWnXmK7Y",
+//   },
+//   {
+//     image: "https://img.youtube.com/vi/umiKiW4En9g/maxresdefault.jpg",
+//     videoUrl: "https://www.youtube.com/watch?v=umiKiW4En9g",
+//   },
+// ];
+
 export const dummyTrailers = [
   {
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBKFaxvMIDBFBxE0ElylyQKp1v_hLats7vsQ&s",
+    image: Goat,
     videoUrl: "https://youtu.be/B5GAjuSnNuQ?si=0WqdGqbQ6xJs-BHZ",
   },
   {
-    image:
-      "https://th-i.thgim.com/public/entertainment/movies/gnesbr/article66995238.ece/alternates/LANDSCAPE_1200/Leo%20First%20Look.jpg",
+    image: Leo,
     videoUrl: "https://youtu.be/Po3jStA673E?si=HlLWoVGIHsYBsL_w",
   },
   {
-    image:
-      "https://i.redd.it/first-look-posters-of-vijay-movies-since-2012-v0-mwi2kysv7i7b1.jpg?width=900&format=pjpg&auto=webp&s=509b71fdee04d674117eac37bf0e884c57558edc",
+    image: Varisu,
     videoUrl: "https://youtu.be/9fux9swQ5AQ?si=gR-MBoR5zhOa3f6V",
   },
   {
-    image:
-      "https://pbs.twimg.com/media/E4Z9tAEVUAICHE9?format=jpg&name=4096x4096",
+    image: Beast,
     videoUrl: "https://youtu.be/0E1kVRRi6lk?si=RUIOjEqE6oi9UrjE",
   },
   {
-    image:
-      "https://i.redd.it/first-look-posters-of-vijay-movies-since-2012-v0-uyr29juv7i7b1.jpg?width=1200&format=pjpg&auto=webp&s=b76ba4376a3179bcd65afcf933d7f7efea20f23d",
+    image: Master,
     videoUrl: "https://youtu.be/UTiXQcrLlv4?si=x2waDmBIp8H-Ebmy",
   },
 ];
