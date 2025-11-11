@@ -4,9 +4,23 @@ import { useNavigate } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
 import timeFormat from "../lib/timeFormat";
 import Button from "./Button";
+// import { useUser, useClerk } from "@clerk/clerk-react";
 
 const MovieCard = ({ movie }) => {
   const navigate = useNavigate();
+
+  // const { user } = useUser();
+  // const { openSignIn } = useClerk();
+
+  // const handleBuyTickets = () => {
+  //   if (!user) {
+  //     openSignIn();
+  //     return;
+  //   }
+
+  //   navigate(`/movies/${movie._id}`);
+  //   scrollTo(0, 0);
+  // };
 
   return (
     <div className="flex flex-col justify-between p-3 bg-gray-800 rounded-2xl hover:translate-y-1 transition duration-300 w-66">
@@ -48,6 +62,7 @@ const MovieCard = ({ movie }) => {
             navigate(`/movies/${movie._id}`);
             scrollTo(0, 0);
           }}
+          // onClick={handleBuyTickets}
           variant={"primary"}
         />
 
