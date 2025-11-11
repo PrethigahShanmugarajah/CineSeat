@@ -1,4 +1,4 @@
-// CineSeat/Client/src/pages/admin/AddShows.jsx
+// CineSeat / Client / src / pages / admin / AddShows.jsx
 import React, { useEffect, useState } from "react";
 import { dummyShowsData } from "../../assets/assets";
 import Loading from "../../components/Loading";

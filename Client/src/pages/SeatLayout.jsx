@@ -1,4 +1,4 @@
-// CineSeat/Client/src/pages/SeatLayout.jsx
+// CineSeat / Client / src / pages / SeatLayout.jsx
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { assets, dummyDateTimeData, dummyShowsData } from "../assets/assets";

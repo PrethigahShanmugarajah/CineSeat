@@ -1,4 +1,4 @@
-// CineSeat/Client/src/components/TrailerSection.jsx
+// CineSeat / Client / src / components / TrailerSection.jsx
 import React, { useEffect, useState } from "react";
 import { dummyTrailers } from "../assets/assets";
 import ReactPlayer from "react-player";

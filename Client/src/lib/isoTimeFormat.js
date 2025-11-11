@@ -1,4 +1,4 @@
-// CineSeat/Client/src/lib/isoTimeFormat.js
+// CineSeat / Client / src / lib / isoTimeFormat.js
 const isoTimeFormat = (dateTime) => {
   const date = new Date(dateTime);
   const localTime = date.toLocaleTimeString("en-US", {

@@ -1,4 +1,4 @@
-// CineSeat/Client/src/pages/admin/Layout.jsx
+// CineSeat / Client / src/ pages / admin / Layout.jsx
 import React from "react";
 import AdminNavbar from "../../components/admin/AdminNavbar";
 import AdminSidebar from "../../components/admin/AdminSidebar";

@@ -1,4 +1,4 @@
-// CineSeat/Client/src/pages/admin/ListBooking.jsx
+// CineSeat / Client / src / pages / admin / ListBooking.jsx
 import React, { useEffect, useState } from "react";
 import { dummyBookingData } from "../../assets/assets";
 import Loading from "../../components/Loading";

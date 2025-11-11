@@ -1,4 +1,4 @@
-// CineSeat/Client/src/components/Loading.jsx
+// CineSeat / Client / src / components / Loading.jsx
 import React from "react";
 
 const Loading = () => {

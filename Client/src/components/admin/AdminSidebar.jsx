@@ -1,4 +1,4 @@
-// CineSeat/Client/src/components/admin/AdminSidebar.jsx
+// CineSeat / Client / src / components / admin / AdminSidebar.jsx
 import React from "react";
 import { assets } from "../../assets/assets";
 import {

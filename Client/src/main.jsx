@@ -1,4 +1,4 @@
-// CineSeat/Client/src/Main.jsx
+// CineSeat / Client / src / Main.jsx
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";

@@ -1,4 +1,4 @@
-// CineSeat/Client/src/lib/dateFormat.js
+// CineSeat / Client / src / lib / dateFormat.js
 export const dateFormat = (date) => {
   return new Date(date).toLocaleDateString("en-US", {
     weekday: "short",

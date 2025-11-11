@@ -1,4 +1,4 @@
-// CineSeat/Client/src/components/DateSelect.jsx
+// CineSeat / Client / src / components / DateSelect.jsx
 import React, { useState } from "react";
 import BlurCircle from "./BlurCircle";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";

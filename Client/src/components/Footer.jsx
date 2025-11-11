@@ -1,4 +1,4 @@
-// CineSeat/Client/src/components/Footer.jsx
+// CineSeat / Client / src / components / Footer.jsx
 import React from "react";
 import { assets } from "../assets/assets";
 import { FaGooglePlay, FaApple } from "react-icons/fa";

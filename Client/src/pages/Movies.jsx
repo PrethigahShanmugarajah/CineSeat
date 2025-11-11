@@ -1,4 +1,4 @@
-// CineSeat/Client/src/pages/Movie.jsx
+// CineSeat / Client / src / pages / Movie.jsx
 import React from "react";
 import { dummyShowsData } from "../assets/assets";
 import Title from "../components/Title";

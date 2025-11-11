@@ -1,4 +1,4 @@
-// CineSeat/Client/src/pages/admin/Dashboard.jsx
+// CineSeat / Client / src / pages / admin / Dashboard.jsx
 import React, { useEffect, useState } from "react";
 import {
   FaChartLine,

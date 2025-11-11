@@ -1,4 +1,4 @@
-// CineSeat/Client/src/components/ToastProvider.jsx
+// CineSeat / Client / src / components / ToastProvider.jsx
 import React from "react";
 import { ToastContainer, toast, Slide, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";

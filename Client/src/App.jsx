@@ -1,4 +1,4 @@
-// CineSeat/Client/src/App.jsx
+// CineSeat / Client / src / App.jsx
 import React from "react";
 import Navbar from "./components/Navbar";
 import { Route, Routes, useLocation } from "react-router-dom";
