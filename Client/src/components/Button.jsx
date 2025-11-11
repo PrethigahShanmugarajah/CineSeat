@@ -1,11 +1,11 @@
 // CineSeat/Client/src/components/Button.jsx
 import React from "react";
 
-const Button = ({ text, onClick, className, type, variant }) => {
+const Button = ({ text, children, onClick, className, type, variant }) => {
   const variants = {
     primary:
       "bg-primary text-white border border-primary hover:bg-primary-dull",
-    secondary: "bg-transparent text-black border border-black hover:bg-gray-50",
+    secondary: "bg-transparent text-white border border-white",
     text: "bg-transparent text-black border-none hover:bg-transparent",
   };
 
@@ -17,7 +17,7 @@ const Button = ({ text, onClick, className, type, variant }) => {
       onClick={onClick}
       className={`${baseClasses} ${className || ""}`}
     >
-      {text}
+      {children || text}
     </button>
   );
 };
