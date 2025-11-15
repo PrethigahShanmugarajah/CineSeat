@@ -2,6 +2,7 @@
 import { clerkClient } from "@clerk/express";
 import Booking from "../models/Booking.js";
 import User from "../models/User.js";
+import Movie from "../models/Movie.js";
 
 /* -------- GET USER BOOKINGS -------- */
 export const getUserBookings = async (req, res) => {
@@ -100,6 +101,27 @@ export const updateFavourite = async (req, res) => {
     return res.status(500).json({
       success: false,
       message: `Update Favorite Movie in Clerk User MetaData Error: ${error.message}`,
+    });
+  }
+};
+
+/* -------- GET FAVOURITE MOVIE LIST -------- */
+export const getFavourites = async (req, res) => {
+  try {
+    const user = await clerkClient.users.getUser(req.auth().userId);
+    // const favorites = user.privateMetadata.favorites;
+    const favorites = user.privateMetadata.favorites || [];
+
+    // Getting Movies from Database
+    const movies = await Movie.find({ _id: { $in: favorites } });
+
+    return res.status(200).json({ success: true, movies });
+  } catch (error) {
+    console.error("Get Favorite Movie List Error:", error.message);
+
+    return res.status(500).json({
+      success: false,
+      message: `Get Favorite Movie List Error: ${error.message}`,
     });
   }
 };
