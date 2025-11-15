@@ -102,3 +102,26 @@ export const addShow = async (req, res) => {
     });
   }
 };
+
+/* -------- GET ALL SHOWS FROM THE DATABASE -------- */
+export const getShows = async (req, res) => {
+  try {
+    const shows = await Show.find({ showDateTime: { $gte: new Date() } })
+      .populate("movie")
+      .sort({ showDateTime: 1 });
+
+    // Filter Unique Shows
+    const uniqueShows = new Set(shows.map((show) => show.movie));
+
+    return res
+      .status(200)
+      .json({ success: true, shows: Array.from(uniqueShows) });
+  } catch (error) {
+    console.error("Get All Shows from the Database Error:", error.message);
+
+    return res.status(500).json({
+      success: false,
+      message: `Get All Shows from the Database Error: ${error.message}`,
+    });
+  }
+};
