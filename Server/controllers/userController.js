@@ -1,7 +1,6 @@
 // CineSeat / Server / controllers / userController.js
 import { clerkClient } from "@clerk/express";
 import Booking from "../models/Booking.js";
-import User from "../models/User.js";
 import Movie from "../models/Movie.js";
 
 /* -------- GET USER BOOKINGS -------- */
