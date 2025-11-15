@@ -1,5 +1,6 @@
 // CineSeat / Server / controllers / userController.js
-import Booking from "../models/Booking";
+import { clerkClient } from "@clerk/express";
+import Booking from "../models/Booking.js";
 
 /* -------- GET USER BOOKINGS -------- */
 export const getUserBookings = async (req, res) => {
@@ -20,6 +21,43 @@ export const getUserBookings = async (req, res) => {
     return res.status(500).json({
       success: false,
       message: `Get User Bookings Error: ${error.message}`,
+    });
+  }
+};
+
+/* -------- ADD FAVORITE MOVIE IN CLERK USER METADATA -------- */
+export const addFavorite = async (req, res) => {
+  try {
+    const { movieId } = req.body;
+    const userId = req.auth().userId;
+
+    const user = await clerkClient.users.getUser(userId);
+
+    if (!user.privateMetadata.favorites) {
+      user.privateMetadata.favorites = [];
+    }
+
+    if (!user.privateMetadata.favorites.includes(movieId)) {
+      user.privateMetadata.favorites.push(movieId);
+    }
+
+    await clerkClient.users.updateUserMetadata(userId, {
+      privateMetadata: user.privateMetadata,
+    });
+
+    return res.status(200).json({
+      success: true,
+      message: "Favorite Movie Added Successfully",
+    });
+  } catch (error) {
+    console.error(
+      "Add Favorite Movie in Clerk User MetaData Error:",
+      error.message
+    );
+
+    return res.status(500).json({
+      success: false,
+      message: `Add Favorite Movie in Clerk User MetaData Error: ${error.message}`,
     });
   }
 };
