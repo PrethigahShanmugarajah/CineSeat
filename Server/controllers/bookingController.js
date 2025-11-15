@@ -73,3 +73,22 @@ export const createBooking = async (req, res) => {
     });
   }
 };
+
+/* -------- GET OCCUPIED SEATS -------- */
+export const getOccupiedSeats = async (req, res) => {
+  try {
+    const { showId } = req.params;
+    const showData = await Show.findById(showId);
+
+    const occupiedSeats = Object.keys(showData.occupiedSeats);
+
+    return res.status(200).json({ success: true, occupiedSeats });
+  } catch (error) {
+    console.error("Get Occupied Seats Error:", error.message);
+
+    return res.status(500).json({
+      success: false,
+      message: `Get Occupied Seats Error: ${error.message}`,
+    });
+  }
+};
