@@ -126,7 +126,7 @@ export const getShows = async (req, res) => {
   }
 };
 
-/* ---------------- GET A SINGLE SHOW FROM THE DATABASE ---------------- */
+/* -------- GET A SINGLE SHOW FROM THE DATABASE -------- */
 export const getShow = async (req, res) => {
   try {
     const { movieId } = req.params;
