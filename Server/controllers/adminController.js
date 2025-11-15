@@ -51,3 +51,22 @@ export const getAllShows = async (req, res) => {
     });
   }
 };
+
+/* -------- GET ALL BOOKINGS -------- */
+export const getAllBookings = async (req, res) => {
+  try {
+    const bookings = await Booking.find({})
+      .populate("user")
+      .populate({ path: "show", populate: { path: "movie" } })
+      .sort({ createdAt: -1 });
+
+    return res.status(200).json({ success: true, bookings });
+  } catch (error) {
+    console.error("Get All Bookings Error:", error.message);
+
+    return res.status(500).json({
+      success: false,
+      message: `Get All Bookings Error: ${error.message}`,
+    });
+  }
+};
