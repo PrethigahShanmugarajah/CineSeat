@@ -5,6 +5,6 @@ import { addFavorite, getUserBookings } from "../controllers/userController.js";
 const userRouter = express.Router();
 
 userRouter.get("/bookings", getUserBookings);
-userRouter.get("/add-favorite", addFavorite);
+userRouter.post("/add-favorite", addFavorite);
 
 export default userRouter;
