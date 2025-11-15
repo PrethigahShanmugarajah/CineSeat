@@ -12,7 +12,12 @@ export const getNowPlayingMovies = async (req, res) => {
     );
 
     const movies = data.results;
-    res.json({ success: true, movies: movies });
+
+    return res.status(200).json({
+      success: true,
+      message: "Now Playing Movies Fetched Successfully",
+      movies: movies,
+    });
   } catch (error) {
     console.error("Get Now Playing Movies List Error:", error.message);
 
