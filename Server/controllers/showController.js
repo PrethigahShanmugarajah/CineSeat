@@ -1,6 +1,7 @@
 // CineSeat / Server / controllers / showController.js
 import axios from "axios";
-import Movie from "../models/Movie";
+import Movie from "../models/Movie.js";
+import Show from "../models/Show.js";
 
 /* -------- GET NOW PLAYING MOVIES LIST -------- */
 export const getNowPlayingMovies = async (req, res) => {
@@ -32,13 +33,13 @@ export const getNowPlayingMovies = async (req, res) => {
 /* -------- ADD A NEW SHOW TO THE DATABASE -------- */
 export const addShow = async (req, res) => {
   try {
-    const { movieId, showInput, showPrice } = req.body;
+    const { movieId, showsInput, showPrice } = req.body;
 
     let movie = await Movie.findById(movieId);
 
     if (!movie) {
       // Fetch Movie Details and Credits from TMDB API
-      const [movieDetailsResponse, movieCreditsResponse] = await Pormise.all([
+      const [movieDetailsResponse, movieCreditsResponse] = await Promise.all([
         axios.get(`https://api.themoviedb.org/3/movie/${movieId}`, {
           headers: { Authorization: `Bearer ${process.env.TMDB_API_KEY}` },
         }),
@@ -71,7 +72,7 @@ export const addShow = async (req, res) => {
 
     const showsToCreate = [];
 
-    showInput.forEach((show) => {
+    showsInput.forEach((show) => {
       const showDate = show.date;
       show.time.forEach((time) => {
         const dateTimeString = `${showDate}T${time}`;
