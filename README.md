@@ -140,8 +140,8 @@ This project is based on the YouTube tutorial:
 
 ## 👨‍💻 Author
 
-**Prethigah Shanmugarajah (2020/2021)**
-Department of Software Engineering, Faculty of Computing
+**Prethigah Shanmugarajah (2020/2021)**<br>
+Department of Software Engineering, Faculty of Computing<br>
 Sabaragamuwa University of Sri Lanka
 
 ---
