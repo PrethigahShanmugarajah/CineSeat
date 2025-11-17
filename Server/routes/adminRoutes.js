@@ -1,4 +1,3 @@
-// CineSeat / Server / routes / adminRoutes.js
 import express from "express";
 import { protectAdmin } from "../middleware/auth.js";
 import {

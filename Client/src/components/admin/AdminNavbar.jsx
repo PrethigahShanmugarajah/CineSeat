@@ -1,4 +1,3 @@
-// CineSeat / Client / src / components / admin / AdminNavbar.jsx
 import React from "react";
 import { Link } from "react-router-dom";
 import { assets } from "../../assets/assets";

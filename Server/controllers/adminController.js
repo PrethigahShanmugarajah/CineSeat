@@ -1,6 +1,6 @@
-// CineSeat / Server / controllers / adminController.js
 import Booking from "../models/Booking.js";
 import Show from "../models/Show.js";
+import User from "../models/User.js";
 
 /* -------- CHECK IF USER IS ADMIN -------- */
 export const isAdmin = async (req, res) => {

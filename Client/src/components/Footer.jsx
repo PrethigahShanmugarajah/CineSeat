@@ -1,4 +1,3 @@
-// CineSeat / Client / src / components / Footer.jsx
 import React from "react";
 import { assets } from "../assets/assets";
 import { FaGooglePlay, FaApple } from "react-icons/fa";
@@ -17,16 +16,6 @@ const Footer = () => {
             enjoy a seamless movie-going experience from the comfort of your
             device.
           </p>
-
-          {/* <div className="flex items-center gap-2 mt-4">
-            <img
-              src={assets.googlePlay}
-              alt="Google Play"
-              className="h-9 w-auto"
-            />
-
-            <img src={assets.appStore} alt="App Store" className="h-9 w-auto" />
-          </div> */}
 
           <div className="flex items-center gap-4 mt-4">
             <Button variant="secondary" className="flex items-center gap-3">

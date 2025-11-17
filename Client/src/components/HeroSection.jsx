@@ -1,4 +1,3 @@
-// CineSeat / Client / src / components / HeroSection.jsx
 import React from "react";
 import { assets } from "../assets/assets";
 import { FaArrowRight, FaCalendar, FaRegClock } from "react-icons/fa";
@@ -35,13 +34,6 @@ const HeroSection = () => {
         action, emotion, and Vijay’s powerful performance.
       </p>
 
-      {/* <button
-        onClick={() => navigate("/movies")}
-        className="flex items-center gap-1 px-6 py-3 text-sm bg-primary hover:bg-primary-dull transition rounded-full font-medium cursor-pointer"
-      >
-        Explore Movies <FaArrowRight className="w-5" />
-      </button> */}
-
       <Button
         text={
           <span className="flex items-center gap-1">
@@ -51,7 +43,6 @@ const HeroSection = () => {
         }
         onClick={() => navigate("/movies")}
         variant="primary"
-        // className="px-6 py-3 text-sm"
       />
     </div>
   );

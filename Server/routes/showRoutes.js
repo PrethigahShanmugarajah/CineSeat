@@ -1,4 +1,3 @@
-// CineSeat / Server / routes / showRoutes.js
 import express from "express";
 import {
   addShow,

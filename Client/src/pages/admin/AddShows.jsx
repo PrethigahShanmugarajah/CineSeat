@@ -1,23 +1,36 @@
-// CineSeat / Client / src / pages / admin / AddShows.jsx
 import React, { useEffect, useState } from "react";
-import { dummyShowsData } from "../../assets/assets";
 import Loading from "../../components/Loading";
 import Title from "../../components/Title";
 import { FaCheck, FaStar, FaTimes } from "react-icons/fa";
 import kConverter from "../../lib/kConverter";
 import Button from "../../components/Button";
+import { useAppContext } from "../../context/AppContext";
+import { notify } from "../../components/ToastProvider";
 
 const AddShows = () => {
   const currency = import.meta.env.VITE_CURRENCY;
   const [nowPlayingMovies, setNowPlayingMovies] = useState([]);
 
-  const [selectedMovies, setSelectedMovies] = useState(null);
+  const [selectedMovie, setSelectedMovie] = useState(null);
   const [dateTimeSelection, setDateTimeSelection] = useState({});
   const [dateTimeInput, setDateTimeInput] = useState("");
   const [showPrice, setShowPrice] = useState("");
+  const [addingShow, setAddingShow] = useState(false);
+
+  const { axios, getToken, user, image_base_url } = useAppContext();
 
   const fetchNowPlayingMovies = async () => {
-    setNowPlayingMovies(dummyShowsData);
+    try {
+      const { data } = await axios.get("/api/show/now-playing", {
+        headers: { Authorization: `Bearer ${await getToken()}` },
+      });
+
+      if (data.success) {
+        setNowPlayingMovies(data.movies);
+      }
+    } catch (error) {
+      console.error("Error fetching movies:", error);
+    }
   };
 
   const handleDateTimeAdd = () => {
@@ -48,9 +61,53 @@ const AddShows = () => {
     });
   };
 
+  const handleSubmit = async () => {
+    try {
+      setAddingShow(true);
+
+      if (
+        !selectedMovie ||
+        Object.keys(dateTimeSelection).length === 0 ||
+        !showPrice
+      ) {
+        return notify.warning("Missing Required Fields");
+      }
+
+      const showsInput = Object.entries(dateTimeSelection).map(
+        ([date, time]) => ({ date, time })
+      );
+
+      const payload = {
+        movieId: selectedMovie,
+        showsInput,
+        showPrice: Number(showPrice),
+      };
+
+      const { data } = await axios.post("/api/show/add", payload, {
+        headers: { Authorization: `Bearer ${await getToken()}` },
+      });
+
+      if (data.success) {
+        notify.success(data.message);
+        setSelectedMovie(null);
+        setDateTimeSelection({});
+        setDateTimeInput("");
+        setShowPrice("");
+      } else {
+        notify.error(data.message);
+      }
+    } catch (error) {
+      console.log("Submission error:", error);
+      notify.error("An error occurred. Please try again.");
+    }
+    setAddingShow(false);
+  };
+
   useEffect(() => {
-    fetchNowPlayingMovies();
-  }, []);
+    if (user) {
+      fetchNowPlayingMovies();
+    }
+  }, [user]);
 
   return nowPlayingMovies.length > 0 ? (
     <>
@@ -64,11 +121,11 @@ const AddShows = () => {
             <div
               key={movie.id}
               className={`relative max-w-60 cursor-pointer group-hover:not-hover:opacity-40 hover:-translate-y-1 transition duration-300`}
-              onClick={() => setSelectedMovies(movie.id)}
+              onClick={() => setSelectedMovie(movie.id)}
             >
               <div className="relative rounded-lg overflow-hidden">
                 <img
-                  src={movie.poster_path}
+                  src={image_base_url + movie.poster_path}
                   alt=""
                   className="w-100 h-75 object-cover brightness-90"
                 />
@@ -83,7 +140,7 @@ const AddShows = () => {
                 </div>
               </div>
 
-              {selectedMovies === movie.id && (
+              {selectedMovie === movie.id && (
                 <div className="absolute top-2 right-2 flex items-center justify-center bg-primary h-6 w-6 rounded">
                   <FaCheck className="w-4 h-4 text-white" strokeWidth={2.5} />
                 </div>
@@ -124,12 +181,6 @@ const AddShows = () => {
             onChange={(e) => setDateTimeInput(e.target.value)}
             className="outline-none"
           />
-          {/* <button
-            onClick={handleDateTimeAdd}
-            className="bg-primary/80 text-white px-3 py-2 text-sm rounded-lg hover:bg-primary cursor-pointer"
-          >
-            Add Time
-          </button> */}
 
           <Button
             text={"Add Time"}
@@ -168,11 +219,14 @@ const AddShows = () => {
           </ul>
         </div>
       )}
-      {/* <button className="bg-primary text-white px-8 py-2 mt-6 rounded hover:bg-primary/90 transition-all cursor-pointer">
-        Add Show
-      </button> */}
 
-      <Button text={"Add Show"} className={"mt-6"} variant={"primary"} />
+      <Button
+        text={"Add Show"}
+        onClick={handleSubmit}
+        disabled={addingShow}
+        className={"mt-6"}
+        variant={"primary"}
+      />
     </>
   ) : (
     <Loading />

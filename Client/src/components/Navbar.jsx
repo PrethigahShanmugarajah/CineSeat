@@ -1,16 +1,17 @@
-// CineSeat / Client / src / components / Navbar.jsx
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { assets } from "../assets/assets";
 import { FaBars, FaSearch, FaTimes } from "react-icons/fa";
 import Button from "./Button";
 import { useClerk, UserButton, useUser } from "@clerk/clerk-react";
+import { useAppContext } from "../context/AppContext";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { user } = useUser();
   const { openSignIn } = useClerk();
-  const navigate = useNavigate();
+
+  const { favouriteMovies } = useAppContext();
 
   return (
     <div className="fixed top-0 left-0 z-50 w-full flex items-center justify-between px-6 md:px-16 lg:px-36 py-5">
@@ -67,15 +68,17 @@ const Navbar = () => {
           Releases
         </Link>
 
-        <Link
-          onClick={() => {
-            scrollTo(0, 0);
-            setIsOpen(false);
-          }}
-          to="/favorite"
-        >
-          Favourites
-        </Link>
+        {favouriteMovies.length > 0 && (
+          <Link
+            onClick={() => {
+              scrollTo(0, 0);
+              setIsOpen(false);
+            }}
+            to="/favorite"
+          >
+            Favourites
+          </Link>
+        )}
 
         {user && (
           <Link
@@ -94,30 +97,9 @@ const Navbar = () => {
         <FaSearch className="max-md:hidden w-6 h-6 cursor-pointer" />
 
         {!user ? (
-          // <button
-          //   onClick={openSignIn}
-          //   className="px-4 py-1 sm:px-7 sm:py-2 bg-primary hover:bg-primary-dull transition rounded-full font-medium cursor-pointer text-white"
-          // >
-          //   Login
-          // </button>
-
           <Button text={"Login"} onClick={openSignIn} variant={"primary"} />
         ) : (
           <UserButton />
-
-          // <UserButton>
-          //   <UserButton.MenuItems>
-          //     <UserButton.Action
-          //       label="My Bookings"
-          //       labelIcon={
-          //         <TicketPlus
-          //           width={15}
-          //           onClick={() => navigate("/my-bookings")}
-          //         />
-          //       }
-          //     />
-          //   </UserButton.MenuItems>
-          // </UserButton>
         )}
       </div>
 

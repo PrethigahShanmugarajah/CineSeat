@@ -1,4 +1,3 @@
-// CineSeat / Client / src / components / Button.jsx
 import React from "react";
 
 const Button = ({ text, children, onClick, className, type, variant }) => {

@@ -82,10 +82,6 @@ npm install
 npm run server
 ```
 
-> 💡 Ensure your MongoDB database is running (Atlas or local MongoDB).
-
----
-
 ### 3️⃣ Frontend Setup
 
 ```bash
@@ -93,10 +89,6 @@ cd Client
 npm install
 npm run dev
 ```
-
-> Your frontend will start on [http://localhost:5173](http://localhost:5173).
-
----
 
 ## 🔑 Environment Variables Setup
 

@@ -1,4 +1,3 @@
-// CineSeat / Server / models / Movie.js
 import mongoose from "mongoose";
 
 const movieSchema = new mongoose.Schema(

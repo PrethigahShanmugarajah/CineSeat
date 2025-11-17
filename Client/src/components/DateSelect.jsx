@@ -1,4 +1,3 @@
-// CineSeat / Client / src / components / DateSelect.jsx
 import React, { useState } from "react";
 import BlurCircle from "./BlurCircle";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
@@ -55,13 +54,6 @@ const DateSelect = ({ dateTime, id }) => {
             <FaChevronRight width={28} />
           </div>
         </div>
-
-        {/* <button
-          onClick={onBookHandler}
-          className="bg-primary text-white px-8 py-2 mt-6 rounded hover:bg-primary/90 transition-all cursor-pointer"
-        >
-          Book Now
-        </button> */}
 
         <Button
           text={"Book Now"}

@@ -1,6 +1,6 @@
-// CineSeat / Server / controllers / bookingController.js
 import Booking from "../models/Booking.js";
 import Show from "../models/Show.js";
+import stripe from "stripe";
 
 /* -------- CHECK AVAILABILITY OF SELECTED SEATS FOR A MOVIE -------- */
 export const checkSeatsAvailability = async (showId, selectedSeats) => {
@@ -44,11 +44,12 @@ export const createBooking = async (req, res) => {
     const showData = await Show.findById(showId).populate("movie");
 
     // Create a new Booking
-    const booking = await Booking.createBooking({
+    const booking = await Booking.create({
       user: userId,
       show: showId,
       amount: showData.showPrice * selectedSeats.length,
       bookedSeats: selectedSeats,
+      isPaid: false,
     });
 
     selectedSeats.map((seat) => {
@@ -60,9 +61,48 @@ export const createBooking = async (req, res) => {
     await showData.save();
 
     // Stripe Gateway Initialize
+    const stripeInstance = new stripe(process.env.STRIPE_SECRET_KEY);
+
+    // Creating line items to for Stripe
+    const line_items = [
+      {
+        price_data: {
+          currency: "LKR",
+          product_data: {
+            name: showData.movie.title,
+          },
+          unit_amount: Math.floor(booking.amount) * 100,
+        },
+        quantity: 1,
+      },
+    ];
+
+    const session = await stripeInstance.checkout.sessions.create({
+      success_url: `${origin}/loading/my-bookings`,
+      cancel_url: `${origin}/my-bookings`,
+      line_items: line_items,
+      mode: "payment",
+      metadata: {
+        bookingId: booking._id.toString(),
+      },
+      expires_at: Math.floor(Date.now() / 1000) + 30 * 60, // Expires in 30 minutes
+    });
+
+    booking.paymentLink = session.url;
+    await booking.save();
+
+    // Run Inngest Sheduler Function to check payment status after 10 minutes
+    await inngest.send({
+      name: "app/checkpayment",
+      data: {
+        bookingId: booking._id.toString(),
+      },
+    });
+
     return res.status(200).json({
       success: true,
       message: "Booked Successfully",
+      url: session.url,
     });
   } catch (error) {
     console.error("Create Booking Error:", error.message);

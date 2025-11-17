@@ -1,4 +1,3 @@
-// CineSeat / Client / src / components / Title.jsx
 import React from "react";
 
 const getTextColor = (index) =>

@@ -1,4 +1,3 @@
-// CineSeat / Server / routes / bookingRoutes.js
 import express from "express";
 import {
   createBooking,
